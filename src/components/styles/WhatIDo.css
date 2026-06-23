@@ -391,3 +391,69 @@
     line-height: 6.8rem;
   }
 }
+/* ── Scroll Reveal ── */
+.what-content {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.what-content.what-card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Expandable highlights — hidden by default ── */
+.what-expanded {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.35s ease;
+  opacity: 0;
+}
+
+/* ── Active card — expand ── */
+.what-content-active .what-expanded {
+  max-height: 600px;   /* ← 300 → 600 */
+  opacity: 1;
+  overflow-y: visible; /* ← add karo */
+}
+
+/* Highlights list */
+.what-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.what-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  opacity: 0.82;
+  line-height: 1.55;
+}
+
+.what-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #14b8a6;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+/* Arrow rotate on expand */
+.what-content-active .what-arrow {
+  transform: rotate(180deg);
+}
+.what-arrow {
+  transition: transform 0.35s ease;
+}

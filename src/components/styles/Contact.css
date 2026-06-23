@@ -34,10 +34,50 @@
   margin-top: 10px;
   margin-bottom: 20px;
 }
+/* Social 2x3 Grid Container */
+.social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: 220px;
+}
 
 a.contact-social {
-  font-size: 25px;
-  border-bottom: 1px solid #ccc;
+  font-size: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;        /* ← rectangular curve */
+  width: 100%;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+a.contact-social:hover {
+  border-color: #14b8a6;
+  color: #14b8a6;
+  background: rgba(20, 184, 166, 0.08);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 1600px) {
+  .social-grid { width: 200px; }
+  a.contact-social { font-size: 20px; height: 50px; }
+}
+
+@media only screen and (max-width: 900px) {
+  .social-grid { width: 180px; }
+}
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 0.2s;
+}
+a.contact-social:hover {
+  border-color: #14b8a6;
+  color: #14b8a6;
 }
 
 .contact-box h2 {

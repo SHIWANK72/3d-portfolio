@@ -1,5 +1,5 @@
 import "./styles/Career.css";
-
+ 
 const Career = () => {
   return (
     <div className="career-section section-container">
@@ -12,67 +12,75 @@ const Career = () => {
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
+ 
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>FPGA & RTL Design Engineer</h4>
+                <h5>Nik-Coronics · Panchkula</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Independent R&D: 14-project RTL-to-DV portfolio on Xilinx Vivado
+              (Cyclone V / Artix-7). Achieved 61.7% dynamic power reduction via
+              hybrid clock gating on a 32-bit RISC datapath at 45 nm, 200 MHz.
+              Full-custom 6T SRAM in SPICE — SNM 92–108 mV across TT/SS/FF corners.
             </p>
           </div>
+ 
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>Data Engineer Intern</h4>
+                <h5>Samsung SDS India · Gurgaon</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
+              Mar–Jul 2025. Python-based data pipeline development and workflow
+              automation within a global semiconductor-affiliated engineering
+              organization. Gained exposure to enterprise-scale engineering
+              operations at a world-class semiconductor company.
             </p>
           </div>
+ 
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+                <h4>VLSI Design Intern</h4>
+                <h5>Kurukshetra University</h5>
               </div>
-              <h3>2016–17</h3>
+              <h3>2024</h3>
             </div>
             <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
+              Jul–Aug 2024. CMOS schematic design and post-layout simulation in
+              Cadence Virtuoso. Applied DRC/LVS checking and transistor-level
+              circuit optimization. Awarded formal Letter of Recommendation.
             </p>
           </div>
+ 
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
+                <h4>ASIC Design Trainee</h4>
+                <h5>TeamLease Services</h5>
               </div>
-              <h3>2013-16</h3>
+              <h3>2022–25</h3>
             </div>
             <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              3-year structured industry training program (60 hrs/month) concurrent
+              with B.Tech: digital ASIC design, RTL coding, logic synthesis, EDA
+              verification, timing analysis, and design-rule compliance aligned with
+              commercial ASIC flow requirements.
             </p>
           </div>
+ 
         </div>
       </div>
     </div>
   );
 };
-
+ 
 export default Career;
+ 

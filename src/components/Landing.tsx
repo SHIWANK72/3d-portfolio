@@ -1,7 +1,23 @@
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, useEffect, useRef } from "react";
+import { useLoading } from "../context/LoadingProvider";
 import "./styles/Landing.css";
 
 const Landing = ({ children }: PropsWithChildren) => {
+  const { isLoading } = useLoading();
+  const hasPlayed = useRef(false);
+
+  useEffect(() => {
+    // Jaise hi loading khatam ho — ek baar auto play
+    if (!isLoading && !hasPlayed.current) {
+      hasPlayed.current = true;
+      setTimeout(() => {
+        const audio = new Audio("/intro.mp3");
+        audio.volume = 1;
+        audio.play().catch(() => {});
+      }, 600); // landing animation settle hone do
+    }
+  }, [isLoading]);
+
   return (
     <>
       <div className="landing-section" id="landingDiv">
@@ -9,20 +25,20 @@ const Landing = ({ children }: PropsWithChildren) => {
           <div className="landing-intro">
             <h2>Hello! I'm</h2>
             <h1>
-              AKASH
+              SHIWANK
               <br />
-              <span>MALHOTRA</span>
+              <span>GUPTA</span>
             </h1>
           </div>
           <div className="landing-info">
-            <h3>Co-Founder &</h3>
+            <h3>FPGA Developer &</h3>
             <h2 className="landing-info-h2">
-              <div className="landing-h2-1">Tech</div>
-              <div className="landing-h2-2">Business</div>
+              <div className="landing-h2-1">VLSI</div>
+              <div className="landing-h2-2">Engineer</div>
             </h2>
             <h2>
-              <div className="landing-h2-info">Business</div>
-              <div className="landing-h2-info-1">Tech</div>
+              <div className="landing-h2-info">Engineer</div>
+              <div className="landing-h2-info-1">VLSI</div>
             </h2>
           </div>
         </div>

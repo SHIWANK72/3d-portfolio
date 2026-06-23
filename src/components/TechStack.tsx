@@ -13,14 +13,18 @@ import {
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
-  "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
+  "/images/ltspice.png",
+  "/images/xillinx.png",
+  "/images/intel-fpga.jpg",
+  "/images/ardiuno.png",
+  "/images/linux.png",
+  "/images/chip.png",
+  "/images/cadence.png",
+  "/images/modelsim.jpg",
+  "/images/MATLAB.png",
+  "/images/synopsys.png",
+  "/images/fpga.png",
+  "/images/python.png",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -168,7 +172,7 @@ const TechStack = () => {
 
   return (
     <div className="techstack">
-      <h2> My Techstack</h2>
+      <h2>My EDA & VLSI Skills</h2>
 
       <Canvas
         shadows

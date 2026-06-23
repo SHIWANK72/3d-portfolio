@@ -1,20 +1,28 @@
 import "./styles/About.css";
-
+ 
 const About = () => {
   return (
     <div className="about-section" id="about">
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am currently co-founder of CallHQ.ai, building real-time voice AI for
-          businesses. I am a technologist at heart with strong business judgment—
-          I enjoy going from product strategy to hands-on engineering. My background
-          spans leadership at Adobe, founding Broki and CallHQ, and shipping
-          full-stack products end to end.
+          FPGA Developer and VLSI Design Engineer with hands-on expertise across
+          the complete digital design flow — RTL coding in Verilog/SystemVerilog,
+          synthesis, place & route, timing closure, testbench verification, and
+          hardware board validation on Xilinx Vivado.
+          <br /><br />
+          Key research results: 61.7% dynamic power reduction via hybrid clock
+          gating (45 nm, 200 MHz); 69% PDP improvement in flip-flop
+          benchmarking across 28/65 nm CMOS nodes. Built and validated a
+          14-project RTL-to-DV portfolio on Cyclone V & Artix-7 FPGA platforms.
+          <br /><br />
+          Diploma Gold Medalist 🥇 · Nik-Cronics· Open to global
+          relocation · Immediate joiner.
         </p>
       </div>
     </div>
   );
 };
-
+ 
 export default About;
+ 
